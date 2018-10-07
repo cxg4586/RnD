@@ -45,24 +45,6 @@ div.items {
     font-size: 15px;
     text-align: center;
 }
-div.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-div.dropdown-content {
-    display: none;
-	position: absolute;
-    background-color: #f9f9f9;
-    min-width: 200px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
-}
-
-div.dropdown:hover div.dropdown-content {
-    display: block;
-}
 
 * {box-sizing: border-box;}
 
@@ -139,6 +121,48 @@ div.topnav .search-container button:hover {
   }
 }
 
+<!--
+div.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+}
+
+div.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+div.shift {
+	position:absolute;
+	top: 185px;
+	right: 1220px;
+}
+
+div.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 40px;
+    box-shadow: 0px 12px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+div.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+div.dropdown-content a:hover {background-color: #ddd;}
+
+div.dropdown:hover .dropdown-content {display: block;}
+
+div.dropdown:hover .dropbtn {background-color: #3e8e41;}
+-->
 </style>
 
 <html>
@@ -152,16 +176,10 @@ div.topnav .search-container button:hover {
 <div class="topnav">
 	<b><a href = "Register Form.html">Registration</b>
 	<b><a href = "Login Form.html">Login</b>
-	<b><a href = "Contact.html">Contact</a></b></font>
+	<b><a href = "About Us.html">About Us</a></b></font>
 	<font size = "4" color = "black">
-	<div class = "dropdown"><span><b><a href = "Holiday Destinations.html">Holiday Destinations</a></b></span>
-		<div class = "dropdown-content"><p>Pacific Islands</p>
-		</div>
-	</div>
-	<div class = "dropdown"><span><b><a href = "Tourist Attractions.html">Tourist Attractions</a></b></span>
-		<div class = "dropdown-content"><p>In Pacific Islands</p>
-		</div>
-	</div>
+	<b><a href = "Holiday Destinations.html">Holiday Destinations</a></b>
+	<b><a href = "Tourist Attractions.html">Tourist Attractions</a></b>
   <div class="search-container">
     <form action="/action_page.php">
       <input type="text" placeholder="Search..." name="search">
@@ -190,8 +208,20 @@ div.topnav .search-container button:hover {
 </font></p>
 </div>
 
+<!--
+<div class = "shift">
+	<div class="dropdown">
+	  <button class="dropbtn">Catalogue</button>
+	  <div class="dropdown-content">
+		<a href="Newsletter.html">Newsletter</a>
+		<a href="Feedback.html">Feedback</a>
+	  </div>
+	</div>
+</div>
+-->
+
 <div class = "container2">
-	<div class = "items"><p><b><font color = "black" size = "4">Categories</font></b></p></div>
+	<div class = "items"><p><b><font color = "black" size = "4">Catalogue</font></b></p></div>
 	<div class = "items"><p><font color = "black"><a href = "Newsletter.html">Newsletter</a></font></p></div>
 	<div class = "items"><p><font color = "black"><a href = "Feedback.html">Feedback</a></font></p></div>
 </div>
