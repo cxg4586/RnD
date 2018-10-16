@@ -167,14 +167,13 @@ div.topnav .search-container button:hover {
 
 </br>
 <div class = "container">
-
-</font></p>
+<font color = "black">
 
 <div class="form">
 <p><b>Welcome <?php echo $_SESSION['username']; ?>!!!</b></p>
 <p>This is a secure website.</p>
 </div>
-
+</font>
 </div>
 
 <div class = "container2">
