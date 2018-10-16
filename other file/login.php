@@ -181,6 +181,13 @@ Password: <input type="password" name="password" placeholder="Password" required
 </form>
 <p>Not registered yet? <a href='register.php'>Register Here</a></p>
 </div>
+
+<div class="bottom-container">
+  <div class = "btn">
+	<b><a href = "Home.php"><button>Go Back to the Home Page</button></a></b>
+  </div>
+</div>
+	
 <?php } ?>
 </body>
 </html>
