@@ -167,21 +167,7 @@ div.topnav .search-container button:hover {
 
 </br>
 <div class = "container">
-<p><font color = "black">New Zealand Tourism Research Institute (NZTRI) is a company which is all about travel and tourism.<br>
-<table align = "center">
-	<tr>
-		<th><b>Contact Details</b></th>
-	</tr>
-	<tr>
-		<td><b>Location:</b> Auckland University of Technology in WH105 &nbsp </td>
-	</tr>
-	<tr>
-		<td><b>Email:</b> nztri@aut.ac.nz</td>
-	</tr>
-	<tr>
-		<td><b>Phone:</b> 64 9 921 9999 Ext 8890</td>
-	</tr>
-</table>
+
 </font></p>
 
 <div class="form">
