@@ -1,0 +1,206 @@
+body {
+     font-family:Arial, Sans-Serif;
+}
+.clearfix:before, .clearfix:after{
+     content: "";
+     display: table;
+}
+.clearfix:after{
+     clear: both;
+}
+a{
+     color:#0067ab;
+     text-decoration:none;
+}
+a:hover{
+     text-decoration:underline;
+}
+.form{
+     width: 300px;
+     margin: 0 auto;
+}
+input[type='text'], input[type='email'],
+input[type='password'] {
+     width: 200px;
+     border-radius: 2px;
+     border: 1px solid #CCC;
+     padding: 10px;
+     color: #333;
+     font-size: 14px;
+     margin-top: 10px;
+}
+input[type='submit']{
+     padding: 10px 25px 8px;
+     color: #fff;
+     background-color: #0067ab;
+     text-shadow: rgba(0,0,0,0.24) 0 1px 0;
+     font-size: 16px;
+     box-shadow: rgba(255,255,255,0.24) 0 2px 0 0 inset,#fff 0 1px 0 0;
+     border: 1px solid #0164a5;
+     border-radius: 2px;
+     margin-top: 10px;
+     cursor:pointer;
+}
+input[type='submit']:hover {
+     background-color: #024978;
+}
+
+body {
+	background-image: url("New Zealand Travel.jpg");
+	background-image opacity: 0.5;
+	font-family: "Times New Roman", Times, serif;
+}
+
+table, th, td {
+	border: 1px solid black;
+}
+
+div.container {
+	margin: auto;
+	width: 60%;
+    border: 2px solid gray;
+	padding: 1px;
+	background-color: white;
+	font-family: "Times New Roman", Times, serif;
+}
+div.container2 {
+	width: 10%;
+    border: 2px solid gray;
+	padding: 1px;
+	background-color: white;
+	font-family: "Times New Roman", Times, serif;
+	position:relative;
+	top: -120px;
+	left: 40px;
+	text-align: center;
+	
+	display: grid;
+	grid-template-columns: auto;
+	background-color: gainsboro;
+	padding: 3px;
+}
+div.items {
+    background-color: white;
+    border: 1px solid #000000;
+    padding: 3px;
+    font-size: 15px;
+    text-align: center;
+}
+
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: "Arial", Helvetica, sans-serif;
+}
+
+div.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+div.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+div.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+div.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+div.topnav .search-container {
+  float: right;
+}
+
+div.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+div.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+div.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  div.topnav .search-container {
+    float: none;
+  }
+  div.topnav a, div.topnav input[type=text], div.topnav div.search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  div.topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+<!--
+div.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+}
+
+div.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+div.shift {
+	position:absolute;
+	top: 185px;
+	right: 1220px;
+}
+
+div.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 40px;
+    box-shadow: 0px 12px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+div.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+div.dropdown-content a:hover {background-color: #ddd;}
+
+div.dropdown:hover .dropdown-content {display: block;}
+
+div.dropdown:hover .dropbtn {background-color: #3e8e41;}
+-->
