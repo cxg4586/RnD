@@ -116,7 +116,7 @@ Password: <input type="password" name="password" placeholder="Password" required
 
 <div class="container signin">
     <p>Already have an account? <a href="login.php">Go To Login Page</a>.</p>
-	<b><a href = "Home.php"><button>Go Back to the Home Page</button></a></b>
+	<b><a href = "Home.html"><button>Go Back to the Home Page</button></a></b>
 </div>
 </form>
 </div>
