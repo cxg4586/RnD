@@ -184,7 +184,7 @@ Password: <input type="password" name="password" placeholder="Password" required
 
 <div class="bottom-container">
   <div class = "btn">
-	<b><a href = "Home.php"><button>Go Back to the Home Page</button></a></b>
+	<b><a href = "Home.html"><button>Go Back to the Home Page</button></a></b>
   </div>
 </div>
 	
