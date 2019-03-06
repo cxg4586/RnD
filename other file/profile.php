@@ -21,6 +21,18 @@ img {
 #bottom {
 	bottom: 20px;
 }
+	
+#gallery .thumbnail{
+width:150px;
+height: 150px;
+float:left;
+margin:2px;
+}
+#gallery .thumbnail img{
+width:150px;
+height: 150px;
+}
+
 </style>
 
 <html>
@@ -40,9 +52,15 @@ img {
 </div>
 
 <div id = "wrapper">
+	<input type="file" id="fileinput" multiple="multiple" accept="image/*" />
+
+	<div id="gallery"></div>
+	<script src="gallery.js"></script>
+	
 	<img src = "Unknown Person.png" />
 	<div id = "bottom">
-	<?php echo $_SESSION['username']; ?>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $_SESSION['username']; ?>
+	<br/><br/>
 	</div>
 </div>
 
