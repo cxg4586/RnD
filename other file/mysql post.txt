@@ -1,0 +1,17 @@
+CREATE TABLE posts (
+
+post_id int(11) NOT NULL,
+
+post_name text NOT NULL,
+
+post_msg text NOT NULL
+
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE comments ( 
+comment_id int(11) NOT NULL,  
+post_id int(11) NOT NULL,  
+user_name text NOT NULL,  
+user_comment text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
