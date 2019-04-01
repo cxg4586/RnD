@@ -1,18 +1,20 @@
 <?php
 
-include (“settings.php”);
+include ("settings.php");
 
-if (isset($_GET[‘post_id’])) {
+if (isset($_GET['post_id'])) {
 
-$id = $_GET[‘post_id’];
+$id = $_GET['post_id'];
 
-$post = $mysqli->query(“SELECT * FROM posts WHERE post_id = $id”);
+//$post = $mysqli->query("SELECT * FROM posts WHERE post_id = $id");
+$post="SELECT * FROM posts WHERE post_id = $id";
+$post=mysqli_query($con,$post);
 
 $post_data = $post->fetch_assoc();
 
 } else {
 
-header(“Location: index.php”);
+header("Location: index.php");
 
 }
 
@@ -24,11 +26,11 @@ header(“Location: index.php”);
 
 <head>
 
-<meta charset=”utf-8″>
+<meta charset="utf-8″>
 
-<title><?php echo $post_data[‘post_name’] ?>’s Status Update</title>
+<title><?php echo $post_data['post_name'] ?>'s Status Update</title>
 
-<link rel=”stylesheet” type=”text/css” href=”styles.css”>
+<link rel="stylesheet" type="text/css" href="styles.css">
 
 </head>
 
@@ -36,27 +38,29 @@ header(“Location: index.php”);
 
 <body>
 
-<div class=”body”>
+<div class="body">
 
-<a href=”index.php”>Home</a> | <b><?php echo $post_data[‘post_name’] ?>'</b>s Status Update
-
-</div>
-
-<div class=”body”>
-
-<div class=”post-panel”>
-
-<div class=”post-body” style=”border: none;”>
-
-<?php echo $post_data[‘post_msg’] ?>
+<a href="index.php">Home</a> | <b><?php echo $post_data['post_name'] ?>'</b>s Status Update
 
 </div>
 
-<div class=”post-footer”>
+<div class="body">
+
+<div class="post-panel">
+
+<div class="post-body" style="border: none;">
+
+<?php echo $post_data['post_msg'] ?>
+
+</div>
+
+<div class="post-footer">
 
 <?php
 
-$comments = $mysqli->query(“SELECT * FROM comments WHERE post_id = $id”);
+//$comments = $mysqli->query("SELECT * FROM comments WHERE post_id = $id");
+$comments="SELECT * FROM comments WHERE post_id = $id";
+$comments=mysqli_query($con,$comments);
 
 ?>
 
@@ -66,17 +70,17 @@ $comments = $mysqli->query(“SELECT * FROM comments WHERE post_id = $id”);
 
 while ($comment_data = $comments->fetch_assoc()) { ?>
 
-<div class=”post-panel”>
+<div class="post-panel">
 
-<div class=”post-header”>
+<div class="post-header">
 
-<b><?php echo $comment_data[‘user_name’] ?></b>
+<b><?php echo $comment_data['user_name'] ?></b>
 
 </div>
 
-<div class=”post-body”>
+<div class="post-body">
 
-<?php echo $comment_data[‘user_comment’] ?>
+<?php echo $comment_data['user_comment'] ?>
 
 </div>
 
@@ -86,15 +90,15 @@ while ($comment_data = $comments->fetch_assoc()) { ?>
 
 ?>
 
-<form method=”post” action=”comment-action.php?post_id=<?php echo $id ?>”>
+<form method="post" action="comment-action.php?post_id=<?php echo $id ?>">
 
 <label>Quick Comment:</label><br>
 
-<textarea name=”comment” required></textarea><br>
+<textarea name="comment" required></textarea><br>
 
-<input type=”text” name=”uname” placeholder=”enter your name here…” required /><br>
+<input type="text" name="uname" placeholder="enter your name here…" required /><br>
 
-<input type=”submit” name=”post_comment” />
+<input type="submit" name="post_comment" />
 
 </form>
 
