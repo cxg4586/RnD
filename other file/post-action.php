@@ -1,22 +1,23 @@
 <?php
 
-include (“settings.php”);
+include ("settings.php");
 
-if (isset($_POST[‘post’])) {
+if (isset($_POST['post'])) {
 
-$post_msg = $_POST[‘post_msg’];
+$post_msg = $_POST['post_msg'];
 
-$uname = $_POST[‘uname’];
+$uname = $_POST['uname'];
 
-$queryCre = CREATE TABLE posts (post_id int(11) NOT NULL, post_name text NOT NULL, post_msg text NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+$queryCre = "CREATE TABLE posts (post_id int(11) NOT NULL, post_name text NOT NULL, post_msg text NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8";
 
-$res = mysqli_query($conn, $queryCre);
+$res = mysqli_query($con, $queryCre);
 
-$post = $mysqli->query(“INSERT INTO posts (post_name, post_msg) VALUES (‘$uname’, ‘$post_msg’)”);
+$post="INSERT INTO posts (post_name, post_msg) VALUES ('$uname', '$post_msg')";
+mysqli_query($con,$post);
 
 if ($post) {
 
-header(“Location: index.php?post_action=posted”);
+header("Location: index.php?post_action=posted");
 
 } else {
 
