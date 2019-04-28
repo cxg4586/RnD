@@ -34,8 +34,8 @@ if ($result->num_rows > 0) {
             <p>
                 <?php echo $row['post_text']; ?>
             </p>
-            <b><a href="Home.html" class="">Go Back to the Home Page</a></b><br>
-            <b><a href="topics.php" class="">Go Back to the Discussion Forum Page</a></b>
+            <b><a href="topics.php" class="">Go Back to the Discussion Forum Page</a></b><br>
+            <b><a href="Home.php" class="">Go Back to the Home Page</a></b>
         </div>
     </div>
 
