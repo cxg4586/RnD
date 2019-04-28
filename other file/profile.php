@@ -103,7 +103,7 @@ include("auth.php");
     }
     </script>
 
-<p><a href="Home.html">Home</a></p>
+<p><a href="Home.php">Home</a></p>
 <a href="logout.php">Logout</a>
 
 </body>
