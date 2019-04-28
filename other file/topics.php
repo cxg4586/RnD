@@ -1,6 +1,8 @@
 <?php
 require_once "settings.php";
-
+session_start();
+$username = $_SESSION['username'] ?? false;
+$isadmin = $_SESSION['isadmin'] ?? false;
 //create and issue the second query
 $createAnotherQueryTable = "CREATE TABLE IF NOT EXISTS `forum_posts` (
   `post_id` int(11) NOT NULL AUTO_INCREMENT,
@@ -30,8 +32,19 @@ $result = $con->query($sql);
         <div class="col-md-6 col-sm-12">
             <h1>
                 Discussion forum
-                <a href="addtopic.html" class="btn btn-success">Add Post</a>
+                <?php
+                // only show add post if is logged in
+                if ($username) {
+                    echo '<a href="addtopic.html" class="btn btn-success">Add Post</a>';
+                }
+                ?>
+
             </h1>
+            <?php
+            if (!$username) {
+                echo '<i><b><a href="login.php">Login</a></b> to add new post</i><br><br> ';
+            }
+            ?>
             <table class="table">
                 <thead>
                 <tr>
@@ -50,6 +63,7 @@ $result = $con->query($sql);
                                     <td><a href='topic.php?id={$row['post_id']}'>{$row['post_title']}</a></td>
                                     <td>{$row['post_owner']}</td>
                                     <td>{$row['post_create_time']}</td>
+                                    " . ($isadmin ? "<td><a class='btn btn-danger' href='deletetopic.php?id={$row['post_id']}'>Delete</a></td>" : '') . "
                                 </tr>";
                     }
                 } else {
@@ -58,7 +72,7 @@ $result = $con->query($sql);
                 ?>
                 </tbody>
             </table>
-            <b><a href="Home.html" class="">Go Back to the Home Page</a></b>
+            <b><a href="Home.php" class="">Go Back to the Home Page</a></b>
         </div>
     </div>
 
