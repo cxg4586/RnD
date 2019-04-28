@@ -1,8 +1,16 @@
 <?php
 
 require_once "settings.php";
+session_start();
+$username = $_SESSION['username'] ?? false;
+$isadmin = $_SESSION['isadmin'] ?? false;
+
+if(!$username){
+    header("Location: login.php");
+    exit();
+}
 //check for required fields from the form
-if ((!$_POST['topic_owner']) || (!$_POST['topic_title'])
+if ( (!$_POST['topic_title'])
     || (!$_POST['post_text'])) {
     header("Location: addtopic.html");
     exit;
@@ -21,7 +29,7 @@ $createAnotherQueryTable = "CREATE TABLE IF NOT EXISTS `forum_posts` (
 mysqli_query($con, $createAnotherQueryTable);
 $text = mysqli_real_escape_string($con, $_POST['post_text']);
 $add_post = "insert into forum_posts(post_title, post_text, post_create_time, post_owner) values ('".$_POST['topic_title']."',
-'$text', now(), '$_POST[topic_owner]')";
+'$text', now(), '$username')";
 mysqli_query($con, $add_post) or die(mysqli_error($con));
 
 header('Location: topic.php?id='.$con->insert_id);
@@ -38,3 +46,4 @@ $msg = "<P>The <strong>$_POST[topic_title]</strong> topic has been created.</p>"
 <?php print $msg; ?>
 </body>
 </html>
+
