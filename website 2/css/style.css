@@ -1,0 +1,357 @@
+*{
+	margin:0;
+	padding:0;
+	font-family:Century Gothic;
+}
+
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../img/beach-coast-coconut-trees-221471.jpg');
+	height:100vh;
+	background-size:cover;
+	background-position:center;
+}
+
+.headerm{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../img/beach-coast-coconut-trees-221471.jpg');
+	height:150vh;
+	background-size:cover;
+	background-position:center;
+}
+
+ul{
+	float:right;
+	list-style-type:none;	
+	margin-top: 25px;
+}
+
+ul li{
+	display:inline-block;
+}
+
+ul li a{
+	text-decoration:none;
+	color:#fff;
+	padding:5px 20px;
+	border: 1px solid #transparent;
+	transition: 0.6s ease;
+}
+
+ul li a:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+ul li.active a{
+	background-color: #fff;
+	color: #000;
+}
+
+.logo img{
+	float:left;
+	width:300px;
+	height:100px;
+	margin-top: 20px;
+}
+
+.main{
+	max-width:1200px;
+	margin:auto;
+}
+
+.title{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+}
+
+.title h1{
+	color:#fff;
+	font-size: 70px;
+}
+
+.container{
+	width:44%;
+	height:44%;
+	background:#fff;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	left:50%;
+	top:50%;
+	box-shadow:5px 3px 15px 4px;
+}
+
+.container1{
+	width:44%;
+	height:48%;
+	background:#fff;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	left:50%;
+	top:50%;
+	box-shadow:5px 3px 15px 4px;
+}
+
+.container2{
+	width:50%;
+	height:105%;
+	background:#BCBEC0;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	left:50%;
+	top:75%;
+	box-shadow:5px 3px 15px 4px;
+}
+
+.apos{
+	position:absolute;
+	left:5%;
+	top:7%;	
+}
+
+.apos1{
+	position:absolute;
+	left:5%;
+	top:59%;	
+}
+
+.apos2{
+	position:absolute;
+	left:5%;
+	top:67%;	
+}
+
+.hpos{
+	position:absolute;
+	left:24%;
+	top:6%;		
+}
+
+.hpos1{
+	position:absolute;
+	left:5%;
+	top:55%;	
+}
+
+.atpos{
+	position:absolute;
+	left:28%;
+	top:6%;		
+}
+
+.center{
+	position:absolute;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	width:50%;
+	top:19%;
+	left:22%;
+}
+
+.center1{
+	position:absolute;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	width:50%;
+	top:67%;
+	left:44%;
+}
+
+.center2{
+	position:absolute;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	top:14%;
+	left:20%;	
+}
+
+h2{
+	position:absolute;
+	left:38%;
+	top:2%;
+}
+
+.h21{
+	position:absolute;
+	left:25%;
+	top:54%;
+}
+
+.h22{
+	position:absolute;
+	left:45%;
+	top:9%;
+}
+
+.h23{
+	position:absolute;
+	left:40%;
+	top:9%;
+}
+
+.h24{
+	position:absolute;
+	left:43%;
+	top:2%;
+}
+
+.h25{
+	position:absolute;
+	left:42%;
+	top:2%;
+}
+
+.h26{
+	position:absolute;
+	left:42%;
+	top:2%;
+}
+
+#email{
+	transform: translate(-50%, -50%);
+	position: absolute;
+	left:50%;
+	top:18%;
+	width:83%;
+	height:10%;
+	padding-left:7px;
+	font-size:17px;
+}
+
+#username{
+	transform: translate(-50%, -50%);
+	position: absolute;
+	left:50%;
+	top:24%;
+	width:83%;
+	height:17%;
+	padding-left:7px;
+	font-size:17px;
+}
+
+#username1{
+	transform: translate(-50%, -50%);
+	position: absolute;
+	left:50%;
+	top:33%;
+	width:83%;
+	height:10%;
+	padding-left:7px;
+	font-size:17px;
+}
+
+#password{
+	transform: translate(-50%, -50%);
+	position: absolute;
+	left:50%;
+	top:50%;
+	width:83%;
+	height:17%;
+	padding-left:7px;
+	font-size:17px;
+}
+
+#password1{
+	transform: translate(-50%, -50%);
+	position: absolute;
+	left:50%;
+	top:48%;
+	width:83%;
+	height:10%;
+	padding-left:7px;
+	font-size:17px;
+}
+
+#confirm{
+	transform: translate(-50%, -50%);
+	position: absolute;
+	left:50%;
+	top:63%;
+	width:83%;
+	height:10%;
+	padding-left:7px;
+	font-size:17px;
+}
+
+button{
+	transform: translate(-50%, -50%);
+	position: absolute;
+	left:50%;
+	top:77%;
+	width:85%;
+	height:20%;	
+	background-color:#16A085;
+	font-size:17px;
+	font-weight:normal;
+	color:#fff;
+	border:none;
+	transition:1s all;
+}
+
+button:hover{
+	background:aqua;
+	cursor:pointer;
+	transition:1s all;
+}
+
+.bpos{
+	transform: translate(-50%, -50%);
+	position: absolute;
+	left:50%;
+	top:83%;
+	width:85%;
+	height:15%;	
+	background-color:#16A085;
+	font-size:17px;
+	font-weight:normal;
+	color:#fff;
+	border:none;
+	transition:1s all;
+}
+
+.bpos:hover{
+	background:aqua;
+	cursor:pointer;
+	transition:1s all;
+}
+
+.bpos1{
+	transform: translate(-50%, -50%);
+	position: absolute;
+	left:50%;
+	top:70%;
+	width:85%;
+	height:12%;	
+	background-color:#16A085;
+	font-size:17px;
+	font-weight:normal;
+	color:#fff;
+	border:none;
+	transition:1s all;	
+
+}
+
+.lost{
+	transform: translate(-50%, -50%);
+	position: absolute;
+	left:50%;
+	top:92%;
+	font-weight:bold;
+	color:#BFC9CA;
+	font-size:18px;
+	text-decoration:none;
+	transition:0.6s all;
+}
+
+.lost:hover{
+	color:#2ee0bd;
+	transition:0.6s all;
+}
+
+input:focus{
+	border:2px solid #16A085;
+	transition:0.6s all;
+}
